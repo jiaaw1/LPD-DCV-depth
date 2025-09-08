@@ -1,4 +1,4 @@
-# Self-supervised Monocular Depth Estimation based on Laplacian Pyramid Decoder and Distance Cost Volume
+# Self-Supervised Monocular Depth Estimation Using a Hierarchical Decoder and Relative Cost Volume
 
 
 
