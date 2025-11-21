@@ -1,14 +1,18 @@
 # Self-supervised Monocular Depth Estimation based on Laplacian Pyramid decoder and Distance Cost Volume
 
-This repository provides the implementation of our paper"Self-supervised Monocular Depth Estimation based on Laplacian Pyramid decoder and Distance Cost Volume".
-We ensure that the key algorithmic components, network architecture, training strategy, and evaluation protocol strictly follow the descriptions in the paper.
-## Implementation Notes on Novel Contributions
+To clearly demonstrate the consistency between the source code and the method described in the paper, 
 
-To help readers locate the implementations of our novel components, we have added detailed comments in the corresponding source files:
+we provide the correspondence between the source code files and the key components of the algorithm as follows:
 
-**Innovation 1:** Implemented and annotated in networks/resnet_encoder.py.
+networks/resnet_encoder_lp_decoder.py — Defines the configuration of the ResNet encoder and the Laplacian pyramid decoder used in the depth network.
 
-**Innovation 2:** Implemented and annotated in networks/RDCV_transformer.py.
+networks/RDCV_transformer.py — Implements the relative distance cost volume using the transformer module.
+
+networks/pose_encoder.py — Contains the encoder of the pose network.
+
+networks/pose_decoder.py — Contains the decoder of the pose network.
+
+In addition, the source code includes detailed comments that highlight the key modules of the algorithm.
 
 ## Training
 
