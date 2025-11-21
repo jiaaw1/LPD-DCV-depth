@@ -6,9 +6,9 @@ We ensure that the key algorithmic components, network architecture, training st
 
 To help readers locate the implementations of our novel components, we have added detailed comments in the corresponding source files:
 
-Innovation 1: Implemented and annotated in networks/resnet_encoder.py.
+**Innovation 1:** Implemented and annotated in networks/resnet_encoder.py.
 
-Innovation 2: Implemented and annotated in networks/RDCV_transformer.py.
+**Innovation 2:** Implemented and annotated in networks/RDCV_transformer.py.
 
 ## Training
 
