@@ -15,7 +15,6 @@
 --diff_lr
 --min_depth 0.001
 --max_depth 80.0
---load_weights_folder 
 --use_stereo
 --eval_mono
 --post_process
