@@ -1,6 +1,6 @@
 # Self-supervised Monocular Depth Estimation based on Laplacian Pyramid decoder and Distance Cost Volume
 
-
+This repository provides the official implementation of our paper"Self-supervised Monocular Depth Estimation based on Laplacian Pyramid decoder and Distance Cost Volume"
 
 ## Training
 
