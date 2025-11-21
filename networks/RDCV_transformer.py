@@ -61,11 +61,13 @@ class RDCV_QueryTr(nn.Module):
             y = torch.sigmoid(y)
         y = y / y.sum(dim=1, keepdim=True)
 
+        # probability conversion
         out = self.convert_to_prob(energy)
         bin_widths = (self.max_val - self.min_val) * y
         bin_widths = nn.functional.pad(bin_widths, (1, 0), mode='constant', value=self.min_val)
         bin_edges = torch.cumsum(bin_widths, dim=1)
 
+        # compute bins center
         centers = 0.5 * (bin_edges[:, :-1] + bin_edges[:, 1:])
         n, dout = centers.size()
         centers = centers.view(n, dout, 1, 1)
