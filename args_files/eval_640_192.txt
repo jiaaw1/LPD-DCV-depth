@@ -5,7 +5,7 @@
 --height 192
 --width 640
 --batch_size 8
---num_epochs 28
+--num_epochs 30
 --scheduler_step_size 15
 --num_features 256
 --model_dim 32
