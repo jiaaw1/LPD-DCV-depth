@@ -47,6 +47,7 @@ class RDCV_QueryTr(nn.Module):
         regression_head, queries = total_queries[0, ...], total_queries[1:self.query_nums + 1, ...] # regression is q1
         queries = queries.permute(1, 0, 2)
 
+        # Pixel depth probability distribution
         energy, _ = self.full_query_layer(x0, queries)
         y = self.regressor(regression_head) # MLP
 
